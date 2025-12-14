@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Rock-Paper-Scissors Tournament</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+    <h1>Rock-Paper-Scissors Tournament</h1>
+
+    <!-- Player Registration -->
+    <div class="register-box">
+        <div class="register-inputs">
+            <input id="player1Name" placeholder="Player 1" />
+            <input id="player2Name" placeholder="Player 2" />
+        </div>
+        <button id="registerBtn" class="register-btn">Register Players</button>
+    </div>
+
+    <!-- GAME BOARD -->
+    <div class="game-area">
+
+        <h2 class="board-title">Rock-Paper-Scissors</h2>
+        <h2 class="boardtitle">Game Board</h2>
+
+        <!-- New Game -->
+        <button id="newGameBtn" class="start-btn" style="display: none;">New Game</button>
+        
+        <!-- Start Round -->
+        <h3 id="roundDisplay">Round: 0 / 10</h3>
+        <button id="startGameBtn" class="start-btn">Start Game</button>
+
+        <!-- Player Moves -->
+        <div class="player-moves">
+            <p><strong id="player1Label">Player 1</strong>: <span id="player1Choice">---</span></p>
+            <p><strong id="player2Label">Player 2</strong>: <span id="player2Choice">---</span></p>
+        </div>
+
+        <!-- RPS Buttons -->
+        <div class="rps-buttons">
+            <button class="rps-btn" data-choice="rock">Rock</button>
+            <button class="rps-btn" data-choice="paper">Paper</button>
+            <button class="rps-btn" data-choice="scissors">Scissors</button>
+        </div>
+
+      <div id="result"></div>
+        <div id="gameOverBox" style="display: none;">
+        <h2 id="gameWinnerText"></h2>
+        <p>Enter new players to start the next match.</p>
+      </div>
+    </div>
+
+    <!-- Leaderboards (TWO separate tables) -->
+    <div class="leaderboard-container">
+
+        <!-- Alphabetical Leaderboard -->
+        <div class="leaderboard-section">
+            <table class="leader-table">
+                <thead>
+                    <tr><th colspan="3">Leaderboard - Alphabetical</th></tr>
+                    <tr><th>#</th><th>Name</th><th>Score</th></tr>
+                </thead>
+                <tbody id="leaderboardAlpha"></tbody>
+            </table>
+
+            <div class="page-controls">
+                <button id="alphaPrev">Prev</button>
+                <span id="alphaPageDisplay">Page 1</span>
+                <button id="alphaNext">Next</button>
+            </div>
+        </div>
+
+        <!-- Score Leaderboard -->
+        <div class="leaderboard-section">
+            <table class="leader-table">
+                <thead>
+                    <tr><th colspan="3">Leaderboard - By Score</th></tr>
+                    <tr><th>#</th><th>Name</th><th>Score</th></tr>
+                </thead>
+                <tbody id="leaderboardScore"></tbody>
+            </table>
+
+            <div class="page-controls">
+                <button id="scorePrev">Prev</button>
+                <span id="scorePageDisplay">Page 1</span>
+                <button id="scoreNext">Next</button>
+            </div>
+        </div>
+
+    </div>
+
+    <script type="module" src="/static/service.js"></script>
+    <script type="module" src="/static/main.js"></script>
+
+</body>
+</html>
