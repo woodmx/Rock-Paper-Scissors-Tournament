@@ -1,6 +1,4 @@
 """
-test_api.py
-
 This script demonstrates how to interact with the Rock–Paper–Scissors Tournament REST API. It follows the style used in the REST tutorial and issues requests to each endpoint in sequence.
 
 Before running this file, make sure the Flask server is running:
