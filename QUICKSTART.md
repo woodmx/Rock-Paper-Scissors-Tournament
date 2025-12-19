@@ -13,7 +13,7 @@ pip install flask
 
 ## Step 3: Run the Server
 
-python app.py
+python main.py
 
 You should see:
 
@@ -23,7 +23,7 @@ Running on http://127.0.0.1:5000
 
 Navigate to:
 
-http://localhost:5000
+http://localhost:5000 
 
 ## Step 5: Play the Game!
 
