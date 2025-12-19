@@ -71,20 +71,21 @@ pip install -r requirements.txt
 ## 5. Project Structure
 
 ```
-Rock-Paper-Scissors-Tournament/
+rps_game/
 │
-├── main.py
-├── static/
-│   ├── main.js
-│   ├── service.js
-│   └── styles.css
+├── main.py               # Main Flask application
+├── requirements.txt      # Python dependencies
+├── QUICKSTART.md         # Quick start guide
+├── README.md             # Project documentation
+├── TUTORIAL.md           # RESTful API tutorial
+├── test_api.py           # API test script
 │
 ├── templates/
-│   └── index.html
-|
-├── README.md
-├── QUICKSTART.md
-└── TUTORIAL.md
+│   └── index.html        # Browser interface
+│
+└── static/
+    ├── style.css         # Stylesheet
+    └── main.js           # Frontend JavaScript
 ```
 
 ---
