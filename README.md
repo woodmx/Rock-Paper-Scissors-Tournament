@@ -10,7 +10,7 @@ Below is the expected directory layout for the tutorial project:
 
 rps_game/
 │
-├── app.py                # Main Flask application
+├── main.py               # Main Flask application
 ├── requirements.txt      # Python dependencies
 ├── QUICKSTART.md         # Quick start guide
 ├── README.md             # Project documentation
@@ -22,7 +22,7 @@ rps_game/
 │
 └── static/
     ├── style.css         # Stylesheet
-    └── script.js         # Frontend JavaScript
+    └── main.js           # Frontend JavaScript
 
 Each part works together to form a complete REST-based web application.
 
@@ -170,3 +170,7 @@ Through this project, you learn:
 ## Conclusion
 
 This project demonstrates the fundamentals of building a REST-driven Flask web application. It provides hands-on experience with backend routes, JSON APIs, frontend communication, and game state management through a Rock–Paper–Scissors game.
+
+## Demo Video
+
+https://youtu.be/2eoQM9LzCUM  
